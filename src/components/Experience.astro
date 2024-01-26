@@ -1,0 +1,42 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+import { TAGS } from "./Tags.astro"
+
+
+const EXPERIENCIE = [
+  {
+    date: "Present...",
+    title: "Machine Learning Engineer - Siemens",
+    description: "Part of the Cybersecurity team working on artificial intelligent tasks, mainly using state of the art NLP and Anomaly Detection models. Additionally I have been working on the development of an scalable Machine Learning Platform (ML Ops) in AWS.",
+    tags: [TAGS.PYTHON, TAGS.PYTORCH, TAGS.AWS, TAGS.TERRAFORM, TAGS.DOCKER, TAGS.SKLEARN],
+  },
+  {
+    date: "Oct 2019 - Aug 2022",
+    title: "Associate Professor − University of Lleida",
+    description: "Teaching 'Programming I' in C for first-year computer science students & Professor of 'Fundamentals of Programming and Communications' in Python for fourth year students of Electric Engineering.",
+    tags: [TAGS.PYTHON],
+  },
+  {
+    date: "Jan 2019 - Feb 2021",
+    title: "Data Scientist − GFT Group",
+    description: "Here I worked for multiple projects from different industries. For exmaple I fulfilled all data science duties for a leading Japanese car manufacturer firm. Additionally, I deliver a highly accurate object detection system to validate the drugs distribution from one of the most important Spanish drug distribution companies.",
+    tags: [TAGS.PYTHON, TAGS.PYTORCH, TAGS.TENSORFLOW, TAGS.GCLOUD, TAGS.DOCKER],
+  },
+  {
+    date: "Oct 2018 - Jan 2019",
+    title: "Data Scientist (Business Intelligence) − Eurecat",
+    description: "Slashed the maintenance cost of Datawarehouse by creating an advanced ETL (based on Azure Integration services) pipeline to efficiently store and analyze the incoming heterogeneous data.",
+    tags: [TAGS.PYTHON, TAGS.POWERBI, TAGS.SKLEARN, TAGS.AZURE],
+  },
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
