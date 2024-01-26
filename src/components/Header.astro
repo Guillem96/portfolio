@@ -1,18 +1,19 @@
 ---
 import ThemeToggle from './ThemeToggle.astro'
+const baseUrl = import.meta.env.BASE_URL;
 
 const navItems = [
   {
     title: 'Experience',
-    url: '/#experience'
+    url: baseUrl + '#experience'
   },
   {
     title: 'Presonal Projects',
-    url: '/#projects'
+    url: baseUrl + '/#projects'
   },
   {
     title: 'About me',
-    url: '/#about-me'
+    url: baseUrl + '/#about-me'
   },
 ]
 ---

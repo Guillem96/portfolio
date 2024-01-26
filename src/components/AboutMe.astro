@@ -1,5 +1,6 @@
 ---
- const personalImageAlt = "Guillem picture"
+const personalImageAlt = "Guillem picture"
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <section class="flex flex-col md:flex-row gap-8 justify-center items-center">
@@ -32,6 +33,6 @@
     </p>
   </div>
 
-  <img src="/me2.jpeg" class="rounded-full size-64 order-1 md:order-2" alt={personalImageAlt}/>
+  <img src={baseUrl + "me2.jpeg"} class="rounded-full size-64 order-1 md:order-2" alt={personalImageAlt}/>
 
 </section>

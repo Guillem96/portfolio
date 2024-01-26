@@ -3,13 +3,15 @@ import GitHub from "./icons/GitHub.astro"
 import LinkButton from "./LinkButton.astro"
 import { TAGS } from "./Tags.astro"
 
+const baseUrl = import.meta.env.BASE_URL;
+
 const PROJECTS = [
   {
     title: "EfficientDet - Paper Implementation",
     description:
       "EfficientDet is a state-of-the-art object detection model that stands out for its efficiency and accuracy. It utilizes a scalable architecture and compound scaling method, which optimizes the balance between resolution, depth, and width of the network, leading to improved performance with lower computational cost.",
     github: "https://github.com/Guillem96/efficientdet-tf",
-    image: "/projects/efficientdet.png",
+    image: baseUrl + "projects/efficientdet.png",
     tags: [TAGS.TENSORFLOW],
   },
   {
@@ -17,7 +19,7 @@ const PROJECTS = [
     description:
       "Pointer Network (Ptr-NN) is a neural network architecture, based on sequence2sequence models, which is able to learn the conditional probability of an output sequence with elements that are discrete tokens corresponding to positions in an input sequence. ",
     github: "https://github.com/Guillem96/pointer-nn-pytorch",
-    image: "/projects/pointer.png",
+    image: baseUrl + "projects/pointer.png",
     tags: [TAGS.PYTORCH],
   },
   {
@@ -25,7 +27,7 @@ const PROJECTS = [
     description:
       "KitNET is an online, unsupervised, and efficient anomaly detector. A Kitsune, in Japanese folklore, is a mythical fox-like creature that has a number of tails, can mimic different forms, and whose strength increases with experience. Similarly, Kit-NET has an ensemble of small neural networks (autoencoders), which are trained to mimic (reconstruct) network traffic patterns, and whose performance incrementally improves overtime.",
     github: "https://github.com/Guillem96/kitsune-pytorch",
-    image: "/projects/kitsune.png",
+    image: baseUrl + "projects/kitsune.png",
     tags: [TAGS.PYTORCH],
   },
   {
@@ -33,7 +35,7 @@ const PROJECTS = [
     description:
       "Utility for One Piece Treasure Cruise phone game. Export your One Piece characters from your box automatically from screenshots. The project uses object detection + contrastrive learning to match the game characters faces to the original anime characters.",
     github: "https://github.com/Guillem96/optc-box-exporter",
-    image: "/projects/optcbx.jpg",
+    image: baseUrl + "projects/optcbx.jpg",
     link: "https://www.reddit.com/r/OnePieceTC/comments/jeku8w/optcbx_automatically_export_your_box/",
     tags: [TAGS.PYTORCH, TAGS.DOCKER],
   },
@@ -42,7 +44,7 @@ const PROJECTS = [
     description:
       "GUI payload chainloader for Nintendo Swtich. The purpose of Argon NX is to stay immutable, so you can always inject it, without caring about other payloads getting updated (Always use ArgonNX for TegraSmash, TegraGUI, TrinkedM0...).",
     github: "https://github.com/Guillem96/argon-nx",
-    image: "/projects/argonnx.png",
+    image: baseUrl + "projects/argonnx.png",
     link: "https://hb-app.store/switch/argon-nx",
     tags: [TAGS.NX],
   },
@@ -50,7 +52,7 @@ const PROJECTS = [
     title: "🦜⛓️ LangChain Contributions",
     description:
       "Contributed to fix low quality code and supporting Amazon Titan Express model as a ChatModel",
-    image: "/projects/lc.png",
+    image: baseUrl + "projects/lc.png",
     link: "https://python.langchain.com/docs/get_started/introduction",
     tags: [TAGS.PYTHON],
   },
