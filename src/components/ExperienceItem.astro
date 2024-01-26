@@ -29,9 +29,9 @@ const { title, description, link, date, tags } = Astro.props
 </p>
 {
   tags && (
-    <ul class="flex gap-x-2 flex-row ms-1 mb-5 mt-2">
+    <ul class="flex gap-x-2 flex-wrap flex-row ms-1 mb-4 mt-2">
       {tags.map((tag) => (
-        <li>
+        <li class="mb-3">
           <span
             class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
           >
